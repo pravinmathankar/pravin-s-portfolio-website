@@ -1,422 +1,595 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pravin's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">PRAVIN MATHANKAR </div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">PRAVIN MATHANKAR</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pravin Mathankar | Data Scientist</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+                Pravin<span>.</span>
+            </a>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#contact" class="nav-btn">Let's Talk</a>
+
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="assets/pravin img.jpeg" style="border-radius: 50%;" alt="Pravin mathankar profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">PRAVIN MATHANKAR</h1>
-        
-        <p class="section__text__p2"></p>Aspiring Data Scientist
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('assets/praveen mathankar resume feb 2026.pdf')"
-          >
-            Download Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/praveen-mathankar-15832a27a/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/pravinmathankar'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="assets/pravin img.jpeg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p> Self learner  <br />data Scientist and Machine learning </p>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <p class="small-heading">
+                    DATA SCIENCE & MACHINE LEARNING
+                </p>
+
+                <h1>
+                    Hi, I'm <span>Pravin Mathankar</span>
+                </h1>
+
+                <h2>
+                    Data Science & Machine Learning Enthusiast
+                </h2>
+
+                <p class="hero-description">
+                    I build data-driven solutions using Python, Machine Learning,
+                    Deep Learning and SQL. I enjoy turning raw data into useful
+                    insights and intelligent systems.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="primary-btn">
+                        View My Projects
+                    </a>
+
+                    <a href="#contact" class="secondary-btn">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://github.com/" target="_blank">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        LinkedIn
+                    </a>
+
+                </div>
+
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p> <b>Diploma</b> in Computer Science and Engineering (2021-2024)<br /> <br> <b>B Tech</b> in Computer Science and Engineering.(2024-2027)</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <!-- <p>
-              I’m <strong>pravin mathankar</strong>, a Computer Science student and passionate DevOps and Cloud enthusiast.
-    I build and streamline scalable, secure solutions using tools like <strong>AWS, Docker, Jenkins, Terraform</strong>,
-    and enhance them with DevSecOps practices using <strong>Trivy, SonarQube</strong>, plus observability via
-    <strong>Prometheus & Grafana</strong>. With hands-on projects spanning CI/CD, infrastructure automation, and monitoring,
-    I’m continuously learning and ready to contribute as a DevOps Engineer.
-            </p> -->
-            <p>
-I am <strong>Pravin Mathanker</strong>, a B.Tech student with a strong interest in Data Science and the IT industry.
-Currently, I am learning <strong>Python</strong> and building a solid foundation in 
-<strong>Data Analysis</strong> and <strong>Machine Learning</strong>.
-I am working on projects to improve my practical skills and create a strong portfolio.
-My skills include <strong>Python</strong>, <strong>Pandas</strong>, <strong>NumPy</strong>, 
-<strong>Git</strong>, <strong>GitHub</strong>, and <strong>Data Analysis</strong>.
-As a fresher, I am seeking an opportunity to start my career as a 
-<strong>Data Scientist</strong> in the IT industry.
-</p>
 
-          </div>
+
+            <div class="hero-card">
+
+                <div class="profile-circle">
+                    PM
+                </div>
+
+                <h3>Data Scientist</h3>
+
+                <p>
+                    Python • ML • Deep Learning • SQL
+                </p>
+
+                <div class="stats">
+
+                    <div>
+                        <strong>2027</strong>
+                        <span>Graduation</span>
+                    </div>
+
+                    <div>
+                        <strong>ML</strong>
+                        <span>Focus</span>
+                    </div>
+
+                    <div>
+                        <strong>Python</strong>
+                        <span>Primary</span>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Skills</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>html / css</h3>
-                  <p> </p> 
-                </div>
-              </article>
-               <article>
-                <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>NumPy</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                
-                <div>
-                  <h3>Pandas</h3>
-                  <p></p>
-                </div>
-              </article>
-             
-              <!-- <article>
-                <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-                />
-                <div>
-                  <h3>Sonarqube</h3>
-                  <p></p>
-                </div>
-              </article> -->
-
-              <!-- <article>
-                <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-                />
-                <div>
-                  <h3>Owasp</h3>
-                  <p></p>
-                </div>
-              </article> -->
-
-              <!-- <article>
-                <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-                />
-                <div>
-                  <h3>Trivy</h3>
-                  <p></p>
-                </div>
-              </article> -->
-
-              
-              <!-- <article>
-                <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-                />
-                <div>
-                  <h3>Jenkins</h3>
-                  <p></p>
-                </div>
-              </article> -->
-              <!-- <article>
-                <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-                />
-                <div>
-                  <h3>Terraform</h3>
-                  <p></p>
-                </div>
-              </article> -->
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git & Github</h3>
-                  <p></p>
-                </div>
-              </article>
-              <!-- <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Prometheus</h3>
-                  <p></p>
-                </div>
-               
-              </article> -->
-              <!-- <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Grafana</h3>
-                  <p></p>
-                </div>
-               
-              </article> -->
-             
-            </div>
-          </div>
-
-
-
 
     </section>
 
 
+    <!-- ABOUT -->
+    <section id="about" class="section">
 
+        <div class="container">
 
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="assets/calculator.webp"
-                alt="Project 1"
-                class="project-img"
-              />
+            <div class="section-heading">
+                <p>ABOUT ME</p>
+                <h2>Building with Data & AI</h2>
             </div>
-            <h2 class="experience-sub-title project-title">calculator program </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='' "
-              >
-                Github
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://youtu.be/o_GlbzHFqzA?si=vlzXwPFNLecw0KeQ'"
-              >
-                 Demo 
-              </button> -->
-            </div>
-          </div>
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="assets/number guessing game.jpg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">number guessing game </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Lokendram10/EC2-Watchers'"
-              >
-                Github
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://youtu.be/aqIVOLbxSBQ?si=fP04LBKbSthYEVMJ'"
-              >
-                Demo
-              <!-- </button> -->
-            </div> 
-          </div>
+            <div class="about-grid">
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="assets/house price prediction.jpg"
-                alt="Project 3"
-                class="project-img"
-              />
+                <div class="about-text">
+
+                    <p>
+                        I'm Pravin Mathankar, a B.Tech student with a strong
+                        interest in Data Science and Machine Learning.
+                    </p>
+
+                    <p>
+                        I have been developing hands-on experience with Python,
+                        Pandas, NumPy, Scikit-learn, PyTorch and SQL while
+                        working on machine learning and deep learning projects.
+                    </p>
+
+                    <p>
+                        My goal is to build practical AI solutions and grow
+                        into a professional Data Scientist / Machine Learning
+                        Engineer.
+                    </p>
+
+                </div>
+
+                <div class="about-box">
+
+                    <div class="about-item">
+                        <span>Current Focus</span>
+                        <strong>Data Science & ML</strong>
+                    </div>
+
+                    <div class="about-item">
+                        <span>Primary Language</span>
+                        <strong>Python</strong>
+                    </div>
+
+                    <div class="about-item">
+                        <span>Database</span>
+                        <strong>SQL</strong>
+                    </div>
+
+                    <div class="about-item">
+                        <span>Graduation</span>
+                        <strong>B.Tech — 2027</strong>
+                    </div>
+
+                </div>
+
             </div>
-            <h2 class="experience-sub-title project-title">House Price prediction </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Lokendram10/Indore-Route-Pathfinder-cicd.git '"
-              >
-                Github
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://youtu.be/xhOYr-N4rRw?si=8coeaPIPBi8_SQnp'"
-              >
-                Demo
-              </button> -->
-            </div>
-          </div>
+
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+
     </section>
 
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:lokendradhote64@gmail.com">praveenmathankar2@gmail.com</a></p>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p>MY SKILLS</p>
+                <h2>Technologies I Work With</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div class="skill-icon">PY</div>
+                    <h3>Python</h3>
+                    <p>
+                        Programming, data processing and ML development.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">PD</div>
+                    <h3>Pandas & NumPy</h3>
+                    <p>
+                        Data cleaning, analysis and numerical computing.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">ML</div>
+                    <h3>Machine Learning</h3>
+                    <p>
+                        Regression, preprocessing and model development.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">DL</div>
+                    <h3>Deep Learning</h3>
+                    <p>
+                        Neural networks, CNNs and PyTorch.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">SQL</div>
+                    <h3>SQL</h3>
+                    <p>
+                        Querying, filtering and working with databases.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">RL</div>
+                    <h3>Reinforcement Learning</h3>
+                    <p>
+                        Q-learning and reinforcement learning fundamentals.
+                    </p>
+                </div>
+
+            </div>
+
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/praveen-mathankar-15832a27a/">LinkedIn</a></p>
-        </div>
-      </div>
+
     </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p>MY WORK</p>
+                <h2>Featured Projects</h2>
+            </div>
+
+
+            <div class="projects-grid">
+
+                <!-- PROJECT 1 -->
+                <article class="project-card">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-type">
+                            MACHINE LEARNING
+                        </span>
+
+                        <h3>Power Plant Energy Prediction</h3>
+
+                        <p>
+                            A regression-based machine learning project
+                            that predicts power plant energy output using
+                            real-world data preprocessing and model training.
+                        </p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                            <span>Scikit-learn</span>
+                        </div>
+
+                        <a href="https://github.com/" target="_blank"
+                           class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+                <article class="project-card">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-type">
+                            DEEP LEARNING
+                        </span>
+
+                        <h3>CIFAR-10 Image Classification</h3>
+
+                        <p>
+                            A Convolutional Neural Network built with PyTorch
+                            for image classification using the CIFAR-10
+                            dataset.
+                        </p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>PyTorch</span>
+                            <span>CNN</span>
+                            <span>CIFAR-10</span>
+                        </div>
+
+                        <a href="https://github.com/" target="_blank"
+                           class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 3 -->
+                <article class="project-card">
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-type">
+                            NLP
+                        </span>
+
+                        <h3>IMDB Sentiment Analysis</h3>
+
+                        <p>
+                            Text preprocessing project using movie reviews,
+                            including cleaning, tokenization and NLP
+                            preparation for sentiment classification.
+                        </p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>NLP</span>
+                            <span>NLTK</span>
+                            <span>Machine Learning</span>
+                        </div>
+
+                        <a href="https://github.com/" target="_blank"
+                           class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 4 -->
+                <article class="project-card">
+
+                    <div class="project-number">
+                        04
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-type">
+                            REINFORCEMENT LEARNING
+                        </span>
+
+                        <h3>Q-Learning Agent</h3>
+
+                        <p>
+                            Reinforcement learning implementation using
+                            Q-learning and the CliffWalking environment.
+                        </p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Gymnasium</span>
+                            <span>Q-Learning</span>
+                        </div>
+
+                        <a href="https://github.com/" target="_blank"
+                           class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section id="education" class="section education-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p>EDUCATION</p>
+                <h2>My Academic Journey</h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span>2024 — 2027</span>
+
+                        <h3>B.Tech</h3>
+
+                        <h4>LNCT Group of Institutions, Indore</h4>
+
+                        <p>
+                            Current CGPA: 7.2
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span>2024</span>
+
+                        <h3>Polytechnic Diploma</h3>
+
+                        <h4>Government Polytechnic College, Itarsi</h4>
+
+                        <p>
+                            CGPA: 7.34
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span>2021</span>
+
+                        <h3>12th</h3>
+
+                        <h4>Government Higher Secondary School, Bisnoor</h4>
+
+                        <p>
+                            Percentage: 71.3%
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span>2019</span>
+
+                        <h3>10th</h3>
+
+                        <h4>Government High School, Kajli</h4>
+
+                        <p>
+                            Percentage: 74.4%
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+
+        <div class="container">
+
+            <div class="contact-box">
+
+                <div class="section-heading">
+
+                    <p>GET IN TOUCH</p>
+
+                    <h2>Let's Build Something Together</h2>
+
+                    <p class="contact-description">
+                        I'm open to internships, entry-level opportunities,
+                        collaborations and interesting data science projects.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-buttons">
+
+                    <a href="mailto:your-email@example.com"
+                       class="primary-btn">
+                        Email Me
+                    </a>
+
+                    <a href="https://www.linkedin.com/"
+                       target="_blank"
+                       class="secondary-btn">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 Pravin Mathankar. All rights reserved.
+            </p>
+
+            <p>
+                Built with HTML & CSS
+            </p>
+
         </div>
-      </nav>
-      <p>Copyright &#169; 2025 Pravin Mathankar. All Rights Reserved.</p>
+
     </footer>
-    <script src="script.js"></script>
-  </body>
+
+</body>
 </html>
