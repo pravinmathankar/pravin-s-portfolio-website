@@ -1,0 +1,7 @@
+
+
+
+User-agent: *
+Allow: /
+
+Sitemap: https://pravin-s-portfolio-website-qyb4btw7q-pravinmathankars-projects.vercel.app/sitemap.xml
